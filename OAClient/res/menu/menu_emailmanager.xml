@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/email_write" android:orderInCategory="100"  android:title="写邮件" />
+    <item android:id="@+id/email_draftbox" android:orderInCategory="100" android:title="草稿箱" />
+    <item android:id="@+id/email_recycle" android:orderInCategory="100" android:title="回收站" />
+    <item android:id="@+id/email_tempfile" android:orderInCategory="100" android:title="文件中转站" />
+</menu>

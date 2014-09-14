@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <declare-styleable name="NumberProgressBar">
+        <attr name="progress" format="integer"/>
+        <attr name="max" format="integer"/>
+
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+
+        <attr name="progress_text_offset" format="dimension"/>
+
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference"/>
+    </declare-styleable> 
+     <declare-styleable name="CalendarPickerView">
+    <attr name="android:background"/>
+    <attr name="dividerColor" format="color"/>
+    <attr name="dayBackground" format="reference"/>
+    <attr name="dayTextColor" format="color"/>
+    <attr name="titleTxtColor" format="color"/>
+    <attr name="headerTextColor" format="color"/>
+  </declare-styleable>
+
+  <declare-styleable name="calendar_cell">
+    <attr name="state_selectable" format="boolean" />
+    <attr name="state_current_month" format="boolean" />
+    <attr name="state_today" format="boolean" />
+    <attr name="state_range_first" format="boolean" />
+    <attr name="state_range_middle" format="boolean" />
+    <attr name="state_range_last" format="boolean" />
+    <attr name="state_highlighted" format="boolean" />
+  </declare-styleable>
+</resources>

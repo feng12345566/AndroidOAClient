@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/textbg"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/outbox_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="14-13-11" />
+
+    <TextView
+        android:id="@+id/outbox_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="主题"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/outbox_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="正文"
+        android:textColor="#436EEE"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<include layout="@layout/toptitlelayout"/>
+   
+    <RadioGroup
+        android:id="@+id/loadtypecheck"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#CAE1FF"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/downloadhistory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/checkbg"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="下载记录" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/uploadhistory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/checkbg"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="上传记录" >
+        </RadioButton>
+    </RadioGroup>
+<FrameLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/loadlistviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>
+
+       
+
+</LinearLayout>

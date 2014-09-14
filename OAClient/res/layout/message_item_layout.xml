@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/msgoftime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="13:30" />
+
+    <LinearLayout
+        android:id="@+id/in_item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dip"
+        android:layout_below="@id/msgoftime"
+        android:orientation="horizontal" >
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/in_user_icon"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="top"
+           android:layout_marginTop="20dp"
+             android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/touxiang" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_in_sms_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="3dip"
+                android:text="user001"
+                android:textColor="#ff333333" />
+
+            <TextView
+                android:id="@+id/tv_in_sms_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bubble_in_nor"
+                android:text="asdasd"
+                android:autoLink="all"
+                android:textColor="#ff000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/out_item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+         android:layout_below="@id/msgoftime"
+        android:layout_marginLeft="50dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_out_sms_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="3dip"
+                android:text="user001"
+                android:textColor="#ff333333" />
+
+            <TextView
+                android:id="@+id/tv_out_sms_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bubble_out_bg_nor"
+                android:text="asdasd"
+                android:autoLink="all"
+                android:textColor="#ff000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/out_user_icon"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="top"
+            android:adjustViewBounds="true"
+             android:layout_marginTop="20dp"
+             android:layout_marginRight="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/touxiang" />
+    </LinearLayout>
+
+</RelativeLayout>

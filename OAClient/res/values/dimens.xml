@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_tab_font_size">10.0sp</dimen> 
+    <dimen name="bottom_tab_padding_up">5.0dip</dimen> 
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen> 
+    <dimen name="switch_logo_bottom_padding">30.0sp</dimen> 
+    <dimen name="widget_height">100.0dip</dimen> 
+    <dimen name="sta_height">48.0dip</dimen> 
+    <dimen name="large_padding_length">20.0dip</dimen> 
+    <dimen name="widget_write_margin_top">19.0dip</dimen> 
+    <dimen name="widget_write_margin_left">10.0dip</dimen> 
+    <dimen name="widget_content_margin_top">20.0dip</dimen> 
+    <dimen name="widget_content_margin_left">10.0dip</dimen> 
+    <dimen name="widget_logo_size">35.0dip</dimen> 
+    <dimen name="title_height">74.0dip</dimen> 
+    <dimen name="new_blog_size">70.0dip</dimen> 
+    <dimen name="emotion_item_view_height">13.299988dip</dimen> 
+    <dimen name="splash_test_top_margin_top">20.0dip</dimen> 
+    <dimen name="splash_test_center_margin_right">0.0dip</dimen> 
+    <dimen name="title_text_size">20.0sp</dimen> 
+    <dimen name="normal_padding_length">10.0dip</dimen> 
+    <dimen name="no_result_padding_length">50.0dip</dimen> 
+    <!-- 文字大小 单位sp -->
+    <dimen name="text_10sp">10sp</dimen>
+    <dimen name="text_12sp">12sp</dimen>
+    <dimen name="text_14sp">14sp</dimen>
+    <dimen name="text_16sp">16sp</dimen>
+    <dimen name="text_18sp">18sp</dimen>
+    <dimen name="text_20sp">20sp</dimen>
+    <dimen name="text_22sp">22sp</dimen>
+    <!-- 控件大小 单位dp -->
+    <dimen name="view_1dp">1dp</dimen>
+    <dimen name="view_2dp">2dp</dimen>
+    <dimen name="view_4dp">4dp</dimen>
+    <dimen name="view_6dp">6dp</dimen>
+    <dimen name="view_7dp">7dp</dimen>
+    <dimen name="view_8dp">8dp</dimen>
+    <dimen name="view_9dp">9dp</dimen>
+    <dimen name="view_10dp">10dp</dimen>
+    <dimen name="view_12dp">12dp</dimen>
+    <dimen name="view_14dp">14dp</dimen>
+    <dimen name="view_16dp">16dp</dimen>
+    <dimen name="view_18dp">18dp</dimen>
+    <dimen name="view_20dp">20dp</dimen>
+    <dimen name="view_21dp">21dp</dimen>
+    <dimen name="view_22dp">22dp</dimen>
+    <dimen name="view_24dp">24dp</dimen>
+    <dimen name="view_26dp">26dp</dimen>
+    <dimen name="view_28dp">28dp</dimen>
+    <dimen name="view_30dp">30dp</dimen>
+    <dimen name="view_31dp">31dp</dimen>
+    <dimen name="view_32dp">32dp</dimen>
+    <dimen name="view_34dp">34dp</dimen>
+    <dimen name="view_36dp">36dp</dimen>
+    <dimen name="view_38dp">38dp</dimen>
+    <dimen name="view_39dp">39dp</dimen>
+    <dimen name="view_40dp">40dp</dimen>
+    <dimen name="view_42dp">42dp</dimen>
+    <dimen name="view_44dp">44dp</dimen>
+    <dimen name="view_46dp">46dp</dimen>
+    <dimen name="view_48dp">48dp</dimen>
+    <dimen name="view_50dp">50dp</dimen>
+    <dimen name="view_52dp">52dp</dimen>
+    <dimen name="view_54dp">54dp</dimen>
+    <dimen name="view_55dp">55dp</dimen>
+    <dimen name="view_60dp">60dp</dimen>
+    <dimen name="view_62dp">62dp</dimen>
+    <dimen name="view_64dp">64dp</dimen>
+    <dimen name="view_68dp">68dp</dimen>
+    <dimen name="view_70dp">70dp</dimen>
+    <dimen name="view_74dp">74dp</dimen>
+    <dimen name="view_80dp">80dp</dimen>
+    <dimen name="view_100dp">100dp</dimen>
+    <dimen name="view_130dp">130dp</dimen>
+    <dimen name="view_143dp">143dp</dimen>
+    <dimen name="view_150dp">150dp</dimen>
+    <dimen name="view_160dp">160dp</dimen>
+    <dimen name="view_190dp">190dp</dimen>
+    <dimen name="view_200dp">200dp</dimen>
+    <dimen name="view_220dp">220dp</dimen>
+    <dimen name="view_240dp">240dp</dimen>
+    
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="pull_refresh_listview_text_size">12sp</dimen>
+    
+    <dimen name="view_90dp">90dp</dimen>
+    <dimen name="schoolUnReadIconWidth">10dp</dimen>
+    <dimen name="schoolUnReadIconMarginRight">4dp</dimen>
+    
+    <dimen name="welcome_startbtn_marginbottom">70dp</dimen>
+    
+    <dimen name="bx_tab_rg_h">48dp</dimen>
+    <dimen name="bx_tab_h">40dp</dimen>
+    
+    <dimen name="title_btn_w">55dp</dimen>
+    <dimen name="title_btn_h">36dp</dimen>
+    <dimen name="contact_phone_size">30dp</dimen>
+    <dimen name="calendar_day_headers_paddingbottom">4dp</dimen>
+  <dimen name="calendar_month_topmargin">16dp</dimen>
+  <dimen name="calendar_month_title_bottommargin">4dp</dimen>
+  <dimen name="calendar_text_medium">18sp</dimen>
+  <dimen name="calendar_text_small">14sp</dimen>
+</resources>

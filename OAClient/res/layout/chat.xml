@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/toptitlelayout" />
+
+    <ListView
+        android:id="@+id/formclient_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/default_wallpaper"
+        android:cacheColorHint="@null"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:stackFromBottom="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+       
+        <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:src="@drawable/fbr"/>
+        <RelativeLayout 
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+            <EditText
+            android:id="@+id/formclient_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/edittext_bg"/>
+             <ImageView 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:layout_alignRight="@id/formclient_text"
+            android:layout_centerVertical="true"
+            android:src="@drawable/eyw"/>
+        </RelativeLayout>
+       
+
+        <Button
+            android:id="@+id/formclient_btsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/roundbutton"
+            android:text="发送" />
+    </LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:gravity="center">
+    <ImageView 
+        android:id="@+id/recordvoicebtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ihh"/>
+    <TextView
+         android:id="@+id/recordvoicetext" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按住说话"/>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/toptitlelayout" />
+
+    <FrameLayout
+        android:id="@+id/friendinfolayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/createcall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textbg"
+            android:gravity="center"
+            android:text="打电话" />
+
+        <TextView
+            android:id="@+id/createsms"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textbg_lr"
+            android:gravity="center"
+            android:text="发短信" />
+
+        <TextView
+            android:id="@+id/createemail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textbg_left"
+            android:gravity="center"
+            android:text="发邮件" />
+
+        <TextView
+            android:id="@+id/createchat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textbg"
+            android:gravity="center"
+            android:text="发信息" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical" >
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#A4D3EE">
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="流程管理"/>
+    <LinearLayout
+        android:id="@+id/backlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/backimage"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0000EE"
+            android:text="个人中心"/>
+    </LinearLayout>
+    </RelativeLayout>
+<RadioGroup 
+    android:id="@+id/flowcheck"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#CAE1FF"
+    android:orientation="horizontal">
+    <RadioButton 
+        android:id="@+id/allflow"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+android:layout_marginTop="2dp"
+        android:background="@drawable/checkbg"
+        android:gravity="center_horizontal"
+        android:text="所有流程"></RadioButton>
+    <RadioButton 
+        android:id="@+id/undoneflow"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+       android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/checkbg"
+        android:button="@null"
+        android:text="待办流程"></RadioButton>
+    <RadioButton 
+        android:id="@+id/doneflow"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/checkbg"
+        android:button="@null"
+        android:text="已办流程"></RadioButton>
+
+</RadioGroup>
+ <Spinner
+        android:id="@+id/flowtypespinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/flowlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+</LinearLayout>

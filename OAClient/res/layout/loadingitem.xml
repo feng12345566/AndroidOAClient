@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/filetypeimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/doc" >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/loadingfilename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="123456jhbcxbvxbbcvxbbxcbbvcbvcbbbcxb.doc" />
+
+        <ProgressBar
+            android:id="@+id/loadingfileprogress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp" 
+            android:max="100"/>
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView 
+            android:id="@+id/loadingfilelength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="1.00MB/98.20MB"/>
+        <TextView 
+            android:id="@+id/loadingfilespeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="200KB/s"/>
+        </RelativeLayout>
+    </LinearLayout>
+<ImageView 
+    android:id="@+id/loadingfileoptbtn"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:src="@drawable/pause"/>
+</LinearLayout>

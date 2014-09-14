@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+       <include layout="@layout/menu_title_layout"
+               android:id="@+id/toplayout"/>
+        
+        <RadioGroup
+            android:id="@+id/loadtypecheck"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#CAE1FF"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/inbox"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/checkbg"
+                android:button="@null"
+                android:gravity="center_horizontal"
+                android:text="收件箱" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/outbox"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/checkbg"
+                android:button="@null"
+                android:gravity="center_horizontal"
+                android:text="发件箱" >
+            </RadioButton>
+
+        </RadioGroup>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/loadtypecheck">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/emailviewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+        
+   
+</LinearLayout>

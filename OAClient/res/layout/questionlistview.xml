@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+      <TextView 
+          android:layout_width="50dp"
+          android:layout_height="wrap_content"
+          android:text="当前选择题号"/>
+      <com.mct.view.CustomSpinner
+            android:id="@+id/editingquestionnum"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/roundbutton"/>
+      <com.mct.view.CustomSpinner
+            android:id="@+id/editingquestionopt"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/roundbutton"/>
+        
+        <Button 
+            android:id="@+id/sureeditoptbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+             android:layout_marginLeft="10dp"
+            android:background="@drawable/roundbutton"/>
+    </LinearLayout>
+    <ListView 
+        android:id="@+id/editingquestionlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"></ListView>
+
+</LinearLayout>

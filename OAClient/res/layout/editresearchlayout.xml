@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/textbg_top"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="标  题（*）" />
+
+            <EditText
+                android:id="@+id/researchtitleedittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:hint="不得超过30个字符"
+                android:maxLength="30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/textbg_top"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="描  述" />
+
+            <EditText
+                android:id="@+id/researchcontentedittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="不得超过100个字符,可为空"
+                android:lines="3"
+                android:maxLength="100" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/textbg_top"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束时间（*）" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/dataeditor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:hint="请选择日期" />
+
+                    <Button
+                        android:id="@+id/datepickerbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundbutton"
+                        android:gravity="center"
+                        android:text="选择" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/timeeditor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:hint="请选择时间" />
+
+                    <Button
+                         android:id="@+id/timepickerbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/roundbutton"
+                        android:gravity="center"
+                        android:text="选择" />
+                </LinearLayout>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textbg"
+             android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:orientation="vertical">
+           <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="统计公开范围（*）"/>
+           <RadioGroup 
+               android:id="@+id/publicradiogroup"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <RadioButton 
+                   android:id="@+id/publicradiobtn1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="不公开"/>
+               <RadioButton 
+                   android:id="@+id/publicradiobtn2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="对参与者公开"/>
+               <RadioButton 
+                   android:id="@+id/publicradiobtn3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="对所有人公开"/>
+           </RadioGroup>
+        </LinearLayout>
+        <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="注：打*项为必填项。"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#A4D3EE" >
+
+        <LinearLayout
+            android:id="@+id/backview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/backimage" />
+
+            <TextView
+                android:id="@+id/backtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                 android:textSize="20sp"
+                android:textColor="#0000EE" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="标题"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="按钮"
+           android:textSize="20sp"
+                android:textColor="#0000EE"/>
+    </RelativeLayout>
+   
+
+    <com.mct.view.XListView
+        android:id="@+id/refreshlistview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:divider="@color/blue"
+        android:dividerHeight="1dp"
+        android:layout_weight="1"/>
+</LinearLayout>

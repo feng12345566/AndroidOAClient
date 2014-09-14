@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/showmessage_replyemail" android:title="    回复" android:icon="@drawable/ic_action_reply" />
+    <item android:id="@+id/showmessage_transpondemail" android:title="  转发" android:icon="@drawable/ic_action_copy"/>
+    <item android:id="@+id/showmessage_deleteemail" android:title="  删除" android:icon="@drawable/ic_action_discard"/>
+</menu>

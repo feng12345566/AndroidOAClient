@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chartitemlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/textbg_top"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/chartquestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#1E90FF"
+        android:text="question" />
+     
+    <TextView
+        android:id="@+id/chartanswer"
+        android:layout_marginLeft="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="answer" />
+    <com.mct.view.MyPieChart 
+        android:id="@+id/mypiechartview"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+    <com.mct.view.MyBarChart3DView 
+        android:id="@+id/mybarchartview"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="400dp"/>
+</LinearLayout>

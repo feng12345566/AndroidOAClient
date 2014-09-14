@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginTop="3dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/editansweritemnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A" />
+
+    <EditText
+        android:id="@+id/editansweritemtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:hint="可编辑选项请输入“其它”" />
+
+</LinearLayout>

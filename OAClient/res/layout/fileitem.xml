@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+    <ImageView 
+        android:id="@+id/remotefiletype"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/forlder"></ImageView>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">"
+    <TextView 
+        android:id="@+id/remotefilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:text="文件名"/>
+    <TextView 
+        android:id="@+id/uploadtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+         android:textColor="#000000"
+        android:text="上传时间"/>
+    </LinearLayout>
+    <CheckBox 
+        android:id="@+id/fileischeck"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:button="@null"
+        android:background="@drawable/localefile_cb_bg"/>
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:id="@+id/myinfosetting"
+                style="@style/localeFileMainItemStyle"
+                android:background="@drawable/selector_tab_up"
+                android:onClick="onClick" >
+
+                <ImageView
+                     android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/myinfo" />
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="个人信息" />
+
+              
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bxfile_arrow_right_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/translationsetting"
+                style="@style/localeFileMainItemStyle"
+                android:background="@drawable/selector_tab_middle" >
+
+                <ImageView
+                        android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/translation" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="数据传输" />
+                
+                
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bxfile_arrow_right_normal" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/locationsetting"
+                style="@style/localeFileMainItemStyle"
+                android:background="@drawable/selector_tab_middle">
+
+                <ImageView
+                      android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/mylmylocation" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="签到" />
+                
+                
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bxfile_arrow_right_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/messagesetting"
+                style="@style/localeFileMainItemStyle"
+                android:background="@drawable/selector_tab_down">
+
+                <ImageView
+                        android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/msgicon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="消息提醒" />
+                
+                 
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bxfile_arrow_right_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/safesetting"
+                style="@style/localeFileMainItemStyle"
+                android:layout_marginTop="@dimen/view_20dp"
+                android:background="@drawable/selector_tab_up" >
+
+                <ImageView
+                     android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/safety" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="安全" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bxfile_arrow_right_normal" />
+            </LinearLayout>
+
+           
+            <LinearLayout
+                android:id="@+id/checkupdatasetting"
+                style="@style/localeFileMainItemStyle"
+                android:background="@drawable/selector_tab_down">
+
+                <ImageView
+                     android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/updata" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="检查更新" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bxfile_arrow_right_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/localefile_sdcard2"
+                style="@style/localeFileMainItemStyle"
+                android:background="@drawable/selector_tab_middle"
+                android:onClick="onClick"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bxfile_file_icon_sdcard" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/bxfile_sdcard" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bxfile_arrow_right_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/localefile_extSdcard"
+                style="@style/localeFileMainItemStyle"
+                android:background="@drawable/selector_tab_down"
+                android:onClick="onClick"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bxfile_file_icon_sdcard" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/bxfile_extsdcard" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bxfile_arrow_right_normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="40dip"
+    android:background="#A4D3EE"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:id="@+id/backlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/backimage" />
+
+        <TextView
+            android:id="@+id/backmycenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0000EE"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/menu_layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+     <TextView 
+         android:id="@+id/sureposttext"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginRight="5dp"
+         android:layout_alignParentRight="true"
+         android:textColor="#0000EE"
+         android:visibility="gone"
+          android:layout_centerVertical="true"
+         android:textSize="20sp"
+         android:text="确定"/>
+    <ImageView
+        android:id="@+id/moreapplicationbtn"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_action_overflow" />
+
+</RelativeLayout>
