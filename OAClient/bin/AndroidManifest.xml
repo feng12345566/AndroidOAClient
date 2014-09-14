@@ -1,0 +1,196 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mct.client"
+    android:versionCode="1"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="com.mct.application.MyApplication"
+        android:icon="@drawable/loadimage"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="oSqHz1N7CGDyY6QhBgElEnIp" />
+
+        <activity android:name="com.mct.client.LoadingActivity" >
+
+            <!-- android:windowSoftInputMode="adjustUnspecified|stateHidden" -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <activity android:name="com.mct.client.WeatherSearchActivity" >
+        </activity>
+
+        <service android:name="com.mct.service.LocationService" >
+        </service>
+        <service android:name="com.mct.service.WeatherSearchService" >
+        </service>
+        <service android:name="com.mct.service.UserListLoadService" >
+        </service>
+
+        <activity android:name="com.mct.client.LoginActivity" >
+        </activity>
+        <activity android:name="com.mct.client.FriendInfoActivity" >
+        </activity>
+        <activity android:name="com.mct.client.MyLocationActivity" >
+        </activity>
+        <activity android:name="com.mct.client.MyInfoActivity" >
+        </activity>
+
+        <service android:name="com.mct.service.LocationService" >
+        </service>
+        <service android:name="com.mct.service.FileLoadService" >
+        </service>
+
+        <activity android:name="com.mct.client.FlowmanagerActivity" />
+        <activity android:name="com.mct.client.ChatActivity" />
+        <activity
+            android:name="com.mct.client.AttendanceSettingActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.mct.client.SendFlowActivty" />
+        <activity android:name="com.mct.client.UserActivity" />
+        <activity android:name="com.mct.client.CreateGroupChatActivity" />
+        <activity android:name="com.mct.client.ShowNotificationActivity" />
+        <activity android:name="com.mct.client.DataTransferActivity" />
+        <activity android:name="com.mct.flowview.FlowLayoutView" />
+        <activity android:name="com.mct.client.AllFlowActivity" />
+        <activity android:name="com.mct.client.FlowViewActivity" />
+        <activity android:name="com.mct.client.FlowTableLayoutView" />
+        <activity android:name="com.mct.client.SortListViewActivity" />
+        <activity android:name="com.mct.client.NotificationListActivity" />
+        <activity android:name="com.mct.client.AttendanceActivity" />
+        <activity android:name="com.mct.client.ForumActivity" />
+        <activity android:name="com.mct.client.EmailSearchActivity" />
+        <activity android:name="com.mct.client.ShowMessageActivity" />
+        <activity android:name="com.mct.client.MessageListActvity" />
+        <activity android:name="com.mct.client.NoteBookActivity" />
+        <activity android:name="com.mct.client.ReserachActivity" />
+        <activity android:name="com.mct.client.EditReserachActivity" />
+        <activity
+            android:name="com.mct.client.ShowReserachActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.mct.client.ShowStatisticsActivity" />
+        <activity android:name="com.mct.client.ScheduleManagerActivity" />
+        <activity android:name="com.mct.client.NewNoteActivity" />
+        <activity android:name="com.mct.client.ShowResearchActivity" />
+        <activity android:name="com.mct.client.EditResearchActivity" />
+        <activity android:name="com.mct.client.RecycleEmailActivity" />
+        <activity android:name="com.mct.client.DraftBoxActivity" />
+        <activity android:name="com.mct.client.ToolsBoxActivity" />
+        <activity android:name="com.mct.client.GroupChatListActivity" />
+        <activity
+            android:name="com.mct.client.EditMoreResearchActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.mct.manager.DrawFlowViewActivity" />
+        <activity
+            android:name="com.mct.client.FileShareActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service android:name="com.mct.service.MsgService" >
+            <intent-filter>
+                <action android:name="com.mct.ACTION_CONNECTION_SERVICE" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.mct.localefilebrowser.LocaleFileBrowser" >
+        </activity>
+        <activity android:name="com.mct.localefilebrowser.BXFileViewer" >
+        </activity>
+        <activity android:name="com.mct.localefilebrowser.LocaleFileGallery" >
+        </activity>
+        <activity android:name="com.mct.localefilebrowser.LocaleFileMainActivity" >
+        </activity>
+        <activity android:name="com.mct.localefilebrowser.LocaleMediaFileBrowser" >
+        </activity>
+        <activity android:name="com.mct.client.FileLoadHistoryActivity" >
+        </activity>
+        <activity android:name="com.mct.client.MailManagerActivity" >
+        </activity>
+        <activity android:name="com.mct.client.MessageSettingActivity" >
+        </activity>
+        <activity android:name="com.mct.client.CheckUpdateSettingActivty" >
+        </activity>
+        <activity android:name="com.mct.client.SafetySettingActivity" >
+        </activity>
+        <activity android:name="com.mct.client.GestureLockSettingActivity" >
+        </activity>
+        <activity android:name="com.mct.client.PostMessageActivity" >
+        </activity>
+
+        <receiver android:name="com.mct.receiver.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="ALARM_ACTION" >
+                </action>
+            </intent-filter>
+        </receiver>
+        
+         <service
+            android:name="com.yyxu.download.services.DownloadService"
+            android:exported="true" >
+        </service>
+    </application>
+
+</manifest>

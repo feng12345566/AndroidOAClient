@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/com/mct/localefilebrowser=UTF-8
+encoding//src/com/mct/util=UTF-8
+encoding//src/com/mct/util/Common.java=UTF-8
+encoding//src/com/mct/util/PostMsgTask.java=GBK
+encoding//src/com/mct/util/RecordUtil.java=GBK
+encoding//src/com/mct/view=UTF-8
+encoding/<project>=GBK
+separateDerivedEncodings=true
